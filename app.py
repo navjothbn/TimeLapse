@@ -1,4 +1,4 @@
-import ee
+from earthengine import ee
 import os
 import datetime
 import geopandas as gpd
@@ -8,6 +8,7 @@ import geemap.colormaps as cm
 import geemap.foliumap as geemap
 from datetime import date
 from rois import *
+
 st.set_page_config(layout="wide")
 
 
@@ -34,6 +35,7 @@ st.markdown(
 """,
         unsafe_allow_html=True,
     )
+
 
 
 @st.cache
